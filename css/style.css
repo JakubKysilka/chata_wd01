@@ -13,3 +13,24 @@ p, ul, li {
 .text-link:hover {
     color: #5a5a5c;
 }
+.img-responsive {
+    height: auto;
+    width: 100%;
+}
+@media (min-width:992px) {
+    .img-responsive {
+        height: 400px;
+        width: auto;
+    }
+}
+@media (min-width:1300px) {
+    .img-responsive {
+        height: 500px;
+        width: auto;
+    }
+}@media (min-width:1600px) {
+    .img-responsive {
+        height: 550px;
+        width: auto;
+    }
+}
