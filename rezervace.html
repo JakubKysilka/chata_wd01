@@ -1,147 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chata Raffia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chata Raffia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">Chata Raffia</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Domů</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">O
-              nás</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Fotogalerie</a></li>
-              <li><a class="dropdown-item" href="#">Okolí a lokalita</a></li>
-              <li><a class="dropdown-item" href="#">Kde se najíst</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Rezervace
-            </a>
-            <ul class="dropdown-menu bg-body-tertiary">
-              <li><a class="dropdown-item" href="#">Ceník</a></li>
-              <li><a class="dropdown-item" href="#">Rezervace</a></li>
-              <li><a class="dropdown-item" href="#">Snídnaňové menu</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontakty</a>
-          </li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="rezervace.html">Chata Raffia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Domů</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="fotogalerie.html"
+                role="button"
+                aria-expanded="false"
+                >O nás</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rezervace
+              </a>
+              <ul class="dropdown-menu bg-body-tertiary">
+                <li>
+                  <a class="dropdown-item" href="#kalendar">Volné termíny</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#rezervace">Rezervace</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#snidane">Snídnaňové menu</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakty">Kontakty</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <div class="calendar" id="kalendar">
+            <ul class="start">
+              <li class="days">PO</li>
+              <li class="days">ÚT</li>
+              <li class="days">ST</li>
+              <li class="days">ČT</li>
+              <li class="days">PA</li>
+              <li class="days">SO</li>
+              <li class="days">NE</li>
+            </ul>
+            <ul class="start">
+              <li class="column light">27</li>
+              <li class="column light"><i class="work"></i>28</li>
+              <li class="column light">29</li>
+              <li class="column light">30</li>
+              <li class="column light">31</li>
+              <li class="column weekend">1</li>
+              <li class="column weekend">2</li>
+            </ul>
+            <ul class="start">
+              <li class="column">3</li>
+              <li class="column">4</li>
+              <li class="column">5</li>
+              <li class="column">6</li>
+              <li class="column"><i class="event"></i>7</li>
+              <li class="column weekend"><i class="event"></i>8</li>
+              <li class="column weekend"><i class="event"></i>9</li>
+            </ul>
+            <ul class="start">
+              <li class="column"><i class="meeting"></i>10</li>
+              <li class="column"><i class="meeting"></i>11</li>
+              <li class="column"><i class="meeting"></i>12</li>
+              <li class="column"><i class="meeting"></i>13</li>
+              <li class="column"><i class="meeting"></i>14</li>
+              <li class="column weekend"><i class="meeting"></i>15</li>
+              <li class="column weekend"><i class="meeting"></i>16</li>
+            </ul>
+            <ul class="start">
+              <li class="column">17</li>
+              <li class="column">18</li>
+              <li class="column">19</li>
+              <li class="column">20</li>
+              <li class="column">21</li>
+              <li class="column weekend">22</li>
+              <li class="column weekend">23</li>
+            </ul>
+            <ul class="start">
+              <li class="column">24</li>
+              <li class="column">25</li>
+              <li class="column">26</li>
+              <li class="column">27</li>
+              <li class="column"><i class="work"></i>28</li>
+              <li class="column light weekend">1</li>
+              <li class="column light weekend">2</li>
+            </ul>
+            <ul class="start">
+              <li class="column light">3</li>
+              <li class="column light">4</li>
+              <li class="column light">5</li>
+              <li class="column light">6</li>
+              <li class="column light">7</li>
+              <li class="column light weekend">8</li>
+              <li class="column light weekend">9</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col d-flex align-self-center">
+          <div class="ms-3">
+            <h2>Rezervace</h2>
+            <ul>
+              <li>
+                Cena za chalupu je 8.000kč za víkend nebo 24.000kč za celý
+                týden.
+              </li>
+              <li>V chalupě je místo pro 8 lidí</li>
+              <li>Barevně označené dny jsou již zarezervovaneé</li>
+              <li>
+                Vámi vybraný termín si označte, vyplňte formulář a odešlete
+              </li>
+              <li>Podrobnosti o ubytování s vámí vyřešíme přes email.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="napiste" id="rezervace">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <form>
+              <div class="d-flex">
+                <div class="mb-3 me-3">
+                  <label for="email-input" class="form-label"
+                    >Emailová adresa</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-input"
+                    placeholder="john.doe@email.cz"/>
+                </div>
+                <div class="mb-3">
+                  <label for="tel-input" class="form-label"
+                    >Telefonní čislo</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="tel-input"
+                    placeholder="607 725 668"
+                  />
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="mb-3 me-3">
+                  <label for="name-input" class="form-label">Jméno</label>
+                  <input type="text" class="form-control" id="name-input" />
+                </div>
+                <div class="mb-3">
+                  <label for="name-input02" class="form-label">Příjmení</label>
+                  <input type="text" class="form-control" id="name-input02" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Speciální požadavky</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="mb-3 me-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Snídaňový košík
+                    <a href="#snidane" class="text-link">zjistit více</a></label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Odeslat</button>
+              </div>
+            </form>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <img
+              src="images/139243-v3-gallery@2x.jpg"
+              alt="sea"
+              class="img-responsive03"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="snidane my-4" id="snidane">
+        <div class="row row-cols-1 row-cols-xl-2">
+          <div class="col">
+            <img
+              src="images/healthy-breakfast-wooden-tray-against-concrete-background.jpg"
+              alt="healthy-breakfast-wooden-tray-against-concrete-background"
+              class="img-responsive03 mb-3"
+            />
+          </div>
+          <div class="col d-flex align-self-center">
+            <div>
+              <h2 class="nadpis">Snídaňový košík</h2>
+              <p>
+                V tichém koutě venkovského domu v srdci Walesu se každé ráno
+                začíná den zvláštním rituálem – snídaňovým košíkem plným
+                místních lahůdek. Při pohledu na tento košík vás naplní vůně
+                čerstvě posečených luk a vzdáleného moře. Představte si, jak
+                slunce pomalu stoupá nad zelenými kopcemi, zatímco připravujete
+                svůj den s jedinečným snídaňovým zážitkem.
+              </p>
+              <p>
+                Plné mléko, které pochází z nedalekých farem. Je to mléko s
+                bohatou chutí, z něhož si můžete udělat svůj oblíbený cappuccino
+                nebo si ho jednoduše nalít do sklenice ke svým cereáliím. A o
+                cereáliích tu rozhodně není nouze. Zdravý mix muesli, plný
+                ovesných vloček, sušeného ovoce a oříšků, vám poskytne energii
+                na celý den. Poté koláčky, které pečou místní pekaři. A jak by
+                mohl chybět tradiční welshský čaj? Jedna hrst sušených lístků z
+                místní čajovny vytvoří hřejivou a povzbuzující nápoj.
+              </p>
+              <p>Cena je 300kč pro 4 lidi</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </nav>
-  <div class="container">
-    <div class="wrap">
-    <div class="calendar">
-  
-      <!-- days -->
-      <ul class="start">
-        <li class="days">PO</li>
-        <li class="days">ÚT</li>
-        <li class="days">ST</li>
-        <li class="days">ČT</li>
-        <li class="days">PA</li>
-        <li class="days">SO</li>
-        <li class="days">NE</li>
-      </ul>
-  
-      <!-- row 27-2 -->
-      <ul class="start">
-        <li class="column light">27</li>
-        <li class="column light"><i class="work"></i>28</li>
-        <li class="column light">29</li>
-        <li class="column light">30</li>
-        <li class="column light">31</li>
-        <li class="column weekend">1</li>
-        <li class="column weekend">2</li>
-      </ul>
-  
-      <!-- row 3-9 -->
-      <ul class="start">
-        <li class="column">3</li>
-        <li class="column">4</li>
-        <li class="column">5</li>
-        <li class="column">6</li>
-        <li class="column"><i class="event"></i>7</li>
-        <li class="column weekend"><i class="event"></i>8</li>
-        <li class="column weekend"><i class="event"></i>9</li>
-      </ul>
-  
-      <!-- row 10-16 -->
-      <ul class="start">
-        <li class="column"><i class="meeting"></i>10</li>
-        <li class="column"><i class="meeting"></i>11</li>
-        <li class="column"><i class="meeting"></i>12</li>
-        <li class="column"><i class="meeting"></i>13</li>
-        <li class="column"><i class="meeting"></i>14</li>
-        <li class="column weekend"><i class="meeting"></i>15</li>
-        <li class="column weekend"><i class="meeting"></i>16</li>
-      </ul>
-  
-      <!-- row 17-23 -->
-      <ul class="start">
-        <li class="column">17</li>
-        <li class="column">18</li>
-        <li class="column">19</li>
-        <li class="column">20</li>
-        <li class="column">21</li>
-        <li class="column weekend">22</li>
-        <li class="column weekend">23</li>
-      </ul>
-  
-      <!-- row 24-2 -->
-      <ul class="start">
-        <li class="column">24</li>
-        <li class="column">25</li>
-        <li class="column">26</li>
-        <li class="column">27</li>
-        <li class="column"><i class="work"></i>28</li>
-        <li class="column light weekend">1</li>
-        <li class="column light weekend">2</li>
-      </ul>
-  
-      <!-- row 3-9 -->
-      <ul class="start">
-        <li class="column light">3</li>
-        <li class="column light">4</li>
-        <li class="column light">5</li>
-        <li class="column light">6</li>
-        <li class="column light">7</li>
-        <li class="column light weekend">8</li>
-        <li class="column light weekend">9</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-
-
-
-
-
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <footer class="bg-body-secondary pb-5" id="kontakty">
+      <div class="container pt-4">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col d-md-flex align-self-center">
+            <h2>Chata Raffia</h2>
+          </div>
+          <div class="col">
+            <div class="row row-cols-2 row-cols-md-1">
+              <div class="col">
+            <h4 class="nadpis">Ryché odkazy</h4>
+            <div>
+              <a href="#info" class="link">Informace</a>
+            </div>
+            <div>
+              <a href="#od" class="link">Od majitele</a>
+            </div>
+            <div>
+              <a href="#co-nabizime" class="link">Co nabízíme</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mt-md-5">
+              <h4 class="nadpis">Sociální sítě</h4>
+              <div class="instagram">
+                <a href="https://www.instagram.com/" class="link d-flex gap-3">
+                  <p>Instagram</p>
+                  <img src="images/instagram.svg" alt="instagram" height="20">
+                </a>
+              </div>
+              <div class="facebook">
+                <a href="https://www.facebook.com/" class="link d-flex gap-3">
+                  <p>Facebook</p>
+                  <img src="images/square-facebook.svg" alt="facebook" height="20">
+                </a>
+              </div>
+              <div class="twitter">
+                <a href="https://twitter.com/" class="link d-flex gap-3">
+                  <p>Twitter</p>
+                  <img src="images/square-x-twitter.svg" alt="x" height="20">
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="col">
+            <h4 class="nadpis">Napište nám</h4>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Emailová adresa</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Vaše zpráva</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea2"
+                  rows="1"
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck2"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Souhlasím se zpracováním osobních udajů</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Odeslat</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

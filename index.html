@@ -11,9 +11,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
     <div class="container">
-      <a class="navbar-brand" href="#">Chata Raffia</a>
+      <a class="navbar-brand" href="index.html">Chata Raffia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,29 +21,18 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Domů</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">O
-              nás</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="fotogalerie.html">Fotogalerie</a></li>
-              <li><a class="dropdown-item" href="#">Okolí a lokalita</a></li>
-              <li><a class="dropdown-item" href="#">Kde se najíst</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Rezervace
-            </a>
-            <ul class="dropdown-menu bg-body-tertiary">
-              <li><a class="dropdown-item" href="#">Ceník</a></li>
-              <li><a class="dropdown-item" href="#">Rezervace</a></li>
-              <li><a class="dropdown-item" href="#">Snídnaňové menu</a></li>
-            </ul>
+            <a class="nav-link active" href="index.html">Domů</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kontakty</a>
+            <a class="nav-link" href="fotogalerie.html" role="button" aria-expanded="false">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rezervace.html" role="button" aria-expanded="false">
+              Rezervace
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakty">Kontakty</a>
           </li>
         </ul>
       </div>
@@ -54,47 +43,43 @@
       <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-            aria-label="Slide 1"></button>
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/view_of_sea.jpg" class="d-block img-fluid" alt="view_of_sea">
+            <img src="images/view_of_sea.jpg" class="d-block img-responsive04" alt="view_of_sea">
             <div class="carousel-caption d-none d-md-block">
               <h5>Chata Raffia</h5>
               <p>Místo kde zažijete nezapomenutelné zážitky.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/living_room.jpg" class="d-block img-fluid" alt="living_room">
+            <img src="images/living_room.jpg" class="d-block img-responsive04" alt="living_room">
             <div class="carousel-caption d-none d-md-block">
               <h5>Chata Raffia</h5>
               <p>Místo kde zažijete nezapomenutelné zážitky.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/master-bedroom_03.jpg" class="d-block img-fluid" alt="bedroom">
+            <img src="images/master-bedroom_03.jpg" class="d-block img-responsive04" alt="bedroom">
             <div class="carousel-caption d-none d-md-block">
               <h5>Chata Raffia</h5>
               <p>Místo kde zažijete nezapomenutelné zážitky.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/139243-v3-gallery@2x.jpg" class="d-block img-fluid" alt="sea">
+            <img src="images/139243-v3-gallery@2x.jpg" class="d-block img-responsive04" alt="sea">
             <div class="carousel-caption d-none d-md-block">
               <h5>Chata Raffia</h5>
               <p>Místo kde zažijete nezapomenutelné zážitky.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/kitchen.jpg" class="d-block img-fluid" alt="kitchen">
+            <img src="images/kitchen.jpg" class="d-block img-responsive04" alt="kitchen">
             <div class="carousel-caption d-none d-md-block">
               <h5>Chata Raffia</h5>
               <p>Místo kde zažijete nezapomenutelné zážitky.</p>
@@ -129,7 +114,7 @@
 
     </section>
   </div>
-  <section class="bg-body-secondary">
+  <section class="bg-body-secondary" id="info">
     <div class="container">
       <h2 class="h3 py-4 text-center ">Co u nás najdete?</h2>
       <div class="row row-cols-1 row-cols-md-2">
@@ -193,7 +178,7 @@
       </div>
     </div>
   </section>
-  <section class="majitele  mt-4">
+  <section class="majitele  mt-4" id="od">
     <div class="container">
       <div class="d-flex justify-content-center">
         <div class="w-50 text-center">
@@ -241,80 +226,75 @@
       </div>
     </div>
   </section>
-  <footer class="bg-body-secondary">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col">
+  <footer class="bg-body-secondary pb-5" id="kontakty">
+    <div class="container pt-4">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col d-md-flex align-self-center">
           <h2>Chata Raffia</h2>
         </div>
         <div class="col">
-          <div class="">
-            <h3>Sociální sítě</h3>
+          <div class="row row-cols-2 row-cols-md-1">
+            <div class="col">
+          <h4 class="nadpis">Ryché odkazy</h4>
+          <div>
+            <a href="#info" class="link">Informace</a>
+          </div>
+          <div>
+            <a href="#od" class="link">Od majitele</a>
+          </div>
+          <div>
+            <a href="#co-nabizime" class="link">Co nabízíme</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-md-5">
+            <h4 class="nadpis">Sociální sítě</h4>
             <div class="instagram">
-              <a href="https://www.instagram.com/" class="text-link d-flex gap-3">
+              <a href="https://www.instagram.com/" class="link d-flex gap-3">
                 <p>Instagram</p>
                 <img src="images/instagram.svg" alt="instagram" height="20">
               </a>
             </div>
             <div class="facebook">
-              <a href="https://www.facebook.com/" class="text-link d-flex gap-3">
+              <a href="https://www.facebook.com/" class="link d-flex gap-3">
                 <p>Facebook</p>
                 <img src="images/square-facebook.svg" alt="facebook" height="20">
               </a>
             </div>
             <div class="twitter">
-              <a href="https://twitter.com/" class="text-link d-flex gap-3">
+              <a href="https://twitter.com/" class="link d-flex gap-3">
                 <p>Twitter</p>
                 <img src="images/square-x-twitter.svg" alt="x" height="20">
               </a>
             </div>
           </div>
         </div>
+        </div>
+        </div>
+       
+        <div class="col">
+          <h4 class="nadpis">Napište nám</h4>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Emailová adresa</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" >
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Vaše zpráva</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Souhlasím se zpracováním osobních udajů</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Odeslat</button>
+          </form>
+        </div>
       </div>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
