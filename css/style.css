@@ -135,7 +135,9 @@ p, ul, li {
     width: 100%;
     object-fit: cover;
 }
-
+.strong {
+    font-weight: bold;
+}
 
 
 

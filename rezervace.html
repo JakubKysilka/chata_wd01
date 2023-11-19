@@ -62,6 +62,9 @@
                 <li>
                   <a class="dropdown-item" href="#snidane">Snídnaňové menu</a>
                 </li>
+                <li>
+                  <a class="dropdown-item" href="#recenze">Recenze</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -165,16 +168,19 @@
               <div class="d-flex">
                 <div class="mb-3 me-3">
                   <label for="email-input" class="form-label"
-                    >Emailová adresa</label>
+                    >Emailová adresa</label
+                  >
                   <input
                     type="email"
                     class="form-control"
                     id="email-input"
-                    placeholder="john.doe@email.cz"/>
+                    placeholder="john.doe@email.cz"
+                  />
                 </div>
                 <div class="mb-3">
                   <label for="tel-input" class="form-label"
-                    >Telefonní čislo</label>
+                    >Telefonní čislo</label
+                  >
                   <input
                     type="tel"
                     class="form-control"
@@ -228,6 +234,78 @@
           </div>
         </div>
       </section>
+    </div>
+    <section class="recenze bg-body-secondary my-2" id="recenze">
+      <div class="container py-3">
+        <h2 class="text-center">Recenze</h2>
+        <div
+          id="text-carousel"
+          class="carousel slide text-center"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+              <p class="carousel-text w-50">
+                Našli jsme tenhle malebný domeček na naší další dovolenou!
+                Obklopený krásnými borovicemi v zátoce, je to jako skrytý
+                poklad. Plány na útulné večery s filmy, deskovými hrami a
+                grilováním jsou v chodu. Nemůžeme se dočkat smíchu, příběhů a
+                oddechu od městského chaosu. Tento domeček je naší vstupenkou k
+                vážnému odpočinku a nezapomenutelným vzpomínkám. <br> <i class="strong">-Skupina kamarádů z Pardubic</i>
+              </p>
+            </div>
+            </div>
+            <div class="carousel-item"> 
+              <div class="d-flex justify-content-center">
+              <p class="carousel-text w-50">
+                Našli jsme ideální rodinný útulek – malebný domeček u jezera.
+                Děti už plánují rybářské výpravy a večery u táboráku s výrobou
+                marshmallow. Je to oáza jednoduchosti, kde vyměňujeme obrazovky
+                za deskové hry a městský ruch za zpěv ptáků. Tento domeček
+                slibuje kvalitní rodinný čas, přestávku od rutiny a příležitost
+                vytvořit trvalé vzpomínky obklopeni teplem společenství. <br> <i class="strong">-Pan a Paní Sulcovi</i>
+              </p>
+            </div>
+            </div>
+            
+            <div class="carousel-item ">
+              <div class="d-flex justify-content-center">
+              <p class="carousel-text w-50">
+                Náš útulný domeček, vyvýšený na svahu, nabízí dechberoucí
+                výhledy. S praskajícím krbem je ideálním pozadím pro intimní
+                večery. Od ranní kávy na verandě po pozorování hvězd u ohně,
+                každý okamžik je romantickým únikem. Je to více než útočiště; je
+                to naše svatyně, kde čas stojí v klidu, a my si vychutnáváme
+                jednoduchost lásky uprostřed krásy přírody. <br> <i class="strong">-Rodina Mainových</i>
+              </p>
+            </div>
+            </div>
+          </div>
+          
+
+          <a
+            class="carousel-control-prev"
+            href="#text-carousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#text-carousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
       <section class="snidane my-4" id="snidane">
         <div class="row row-cols-1 row-cols-xl-2">
           <div class="col">
@@ -273,41 +351,59 @@
           <div class="col">
             <div class="row row-cols-2 row-cols-md-1">
               <div class="col">
-            <h4 class="nadpis">Ryché odkazy</h4>
-            <div>
-              <a href="#info" class="link">Informace</a>
-            </div>
-            <div>
-              <a href="#od" class="link">Od majitele</a>
-            </div>
-            <div>
-              <a href="#co-nabizime" class="link">Co nabízíme</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="mt-md-5">
-              <h4 class="nadpis">Sociální sítě</h4>
-              <div class="instagram">
-                <a href="https://www.instagram.com/" class="link d-flex gap-3">
-                  <p>Instagram</p>
-                  <img src="images/instagram.svg" alt="instagram" height="20">
-                </a>
+                <h4 class="nadpis">Ryché odkazy</h4>
+                <div>
+                  <a href="#info" class="link">Informace</a>
+                </div>
+                <div>
+                  <a href="#od" class="link">Od majitele</a>
+                </div>
+                <div>
+                  <a href="#co-nabizime" class="link">Co nabízíme</a>
+                </div>
               </div>
-              <div class="facebook">
-                <a href="https://www.facebook.com/" class="link d-flex gap-3">
-                  <p>Facebook</p>
-                  <img src="images/square-facebook.svg" alt="facebook" height="20">
-                </a>
-              </div>
-              <div class="twitter">
-                <a href="https://twitter.com/" class="link d-flex gap-3">
-                  <p>Twitter</p>
-                  <img src="images/square-x-twitter.svg" alt="x" height="20">
-                </a>
+              <div class="col">
+                <div class="mt-md-5">
+                  <h4 class="nadpis">Sociální sítě</h4>
+                  <div class="instagram">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="link d-flex gap-3"
+                    >
+                      <p>Instagram</p>
+                      <img
+                        src="images/instagram.svg"
+                        alt="instagram"
+                        height="20"
+                      />
+                    </a>
+                  </div>
+                  <div class="facebook">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="link d-flex gap-3"
+                    >
+                      <p>Facebook</p>
+                      <img
+                        src="images/square-facebook.svg"
+                        alt="facebook"
+                        height="20"
+                      />
+                    </a>
+                  </div>
+                  <div class="twitter">
+                    <a href="https://twitter.com/" class="link d-flex gap-3">
+                      <p>Twitter</p>
+                      <img
+                        src="images/square-x-twitter.svg"
+                        alt="x"
+                        height="20"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          </div>
           </div>
           <div class="col">
             <h4 class="nadpis">Napište nám</h4>
