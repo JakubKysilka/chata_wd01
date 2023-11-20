@@ -7,6 +7,9 @@ h1 , h2 , h3 , h4 , h5 , h6, a , .navbar-brand{
 p, ul, li {  
     font-family: "EB Garamond", serif;
 }
+a {
+    scroll-behavior: smooth;
+}
 .nadpis {
     font-family: "EB Garamond", serif;
 }
@@ -138,6 +141,9 @@ p, ul, li {
 .strong {
     font-weight: bold;
 }
+.dropdown-item:active {
+    background-color: #5a5a5c;
+}
 
 
 
@@ -146,7 +152,6 @@ p, ul, li {
 
 .calendar {
     font-family: "brandon-grotesque", sans-serif;
-    
     max-width:600px;
     margin:60px auto;
     height:auto;
@@ -158,8 +163,12 @@ p, ul, li {
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
   }
-  
-  
+  .kalendar {
+    margin-left: -35px;
+  }
+  .kalendar-padding {
+    margin-left: 35px;
+  }
   .calendar:after {
     content: "";
     display: table;
